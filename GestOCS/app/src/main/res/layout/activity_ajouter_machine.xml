@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_ajouter_commercial"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.gestOCS.gestOCSAllSoft.RegisterActivity">
+
+    <TextView
+        android:text="Ajouter une machine"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView" />
+
+    <EditText
+        android:id="@+id/editNumSerie"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="13dp"
+        android:gravity="center"
+        android:hint="Num de Série"
+        android:inputType="textEmailAddress"
+        android:textColor="#000" />
+
+    <EditText
+        android:id="@+id/editDesignationMachine"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editNumSerie"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Designation"
+        android:inputType="textEmailAddress"
+        android:textColor="#000" />
+
+
+    <EditText
+        android:id="@+id/editEtatMachine"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editDesignationMachine"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Etat de Machine"
+        android:inputType="textEmailAddress"
+        android:textColor="#000" />
+
+    <EditText
+        android:id="@+id/editStatutMachine"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editEtatMachine"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Statut Machine"
+        android:inputType="textEmailAddress"
+        android:textColor="#000" />
+
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editCouleur"
+        android:text="Enregistrer" />
+
+    <EditText
+        android:id="@+id/editDateReception"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editStatutMachine"
+        android:ems="10"
+        android:hint="Date de reception"
+        android:inputType="datetime|date" />
+
+    <EditText
+        android:id="@+id/editPVInstallation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editDateReception"
+        android:ems="10"
+        android:hint="PV Installation"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editIdClient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editPVInstallation"
+        android:ems="10"
+        android:hint="Client"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editObservation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editIdClient"
+        android:ems="10"
+        android:hint="Observation"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editCouleur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editObservation"
+        android:ems="10"
+        android:hint="Couleur"
+        android:inputType="textPersonName" />
+
+
+</RelativeLayout>
